@@ -1,0 +1,18 @@
+#include <stdio.h>
+int linhastotais;
+
+
+int main() {
+    
+    printf("quantidades de linhas: ");
+    scanf("%d", &linhastotais);
+    for(int linhas = 1; linhas <= linhastotais; linhas ++){
+        for(int espaco = linhas; espaco <=linhastotais - 1; espaco++) {
+            printf(" ");
+        }
+        for(int asterisco = 1; asterisco <= linhas + linhas - 1; asterisco++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
